@@ -13,6 +13,7 @@ html, body {
 .container{
     display: flex;
     height: 100vh;
+    width: 100%;
 }
 
 .left-side{
@@ -43,7 +44,12 @@ html, body {
 .right-side{
     flex: 0.6;
     display: flex;
-    font-size: 5em ;
+    font-size: 5rem ;
+    flex-direction: column;
+    
+    padding-left: 3em;
+    background-color: aqua;
+    
 }
 
 #sideHead{
@@ -51,5 +57,65 @@ html, body {
     color: aquamarine;
     font-family: "headingFont",sans-serif;
     font-size: 20em;
+}
+
+.formRow{
+    display: flex;
+    gap: 5em;
+    
+    
+    
+}
+
+.formGroup{
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+
+}
+
+label {
+  font-size: 5rem;
+
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+input {
+   width: 100%;
+  padding:1rem;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  font-size: 5rem;
+}
+
+.signUp{
+    margin-right: 0rem;
+}
+
+
+#submitButton{
+    margin-top: 2em;
+    background-color: red;
+    font-size: 3rem;
+    color: white;
+    padding: 0.8em 3em;
+    border-radius: 30px;
+    border: none;
+    font-weight: bolder;
+
+}
+
+.Box{
+    box-shadow: 10px 10px;
+    padding: 5rem;
+    
+    background-color: white;
+}
+
+* {
+    outline: 1px solid red;
 }
 
